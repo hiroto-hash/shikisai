@@ -10,6 +10,6 @@ public class HelloWorld {
   @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Model model) {
         model.addAttribute("message", "Hello Springboot");
-        return "index";
+        return "home/home";
     }
 }

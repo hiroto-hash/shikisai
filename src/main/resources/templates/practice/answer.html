@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/schema/security">
+
+<head>
+  <!-- common head -->
+  <th:block th:fragment="head">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </th:block>
+</head>
+
+<body>
+  <div th:replace="common/header :: header_fragment"></div>
+  <div layout:fragment="content">
+    <h1>answer</h1>
+  </div>
+  <div th:replace="common/footer :: footer_fragment"></div>
+</body>
+
+</html>

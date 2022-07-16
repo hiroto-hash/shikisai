@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-  <head>
-    <title>Hello</title>
-    <meta charset="utf-8" />
-  </head>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.springframework.org/schema/security">
+<head>
+<!-- common head -->
+<th:block th:fragment="head"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.min.css}" rel="stylesheet" />
+    <link href="/css/common.css"
+          th:href="@{/css/common.css}" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+            th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.min.js}"></script></th:block>
+</head>
   <body>
-    <h1>Springboot Hello Sample</h1>
-    <p>
-      <span th:text="${message}"></span>!!!
-    </p>
+    <div th:replace="common/header :: header_fragment"></div>
+    <main>
+      <h1>main</h1>
+    </main>
+    <div th:replace="common/footer :: footer_fragment"></div>
   </body>
 </html>
