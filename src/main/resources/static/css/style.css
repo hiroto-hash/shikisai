@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+header {
+    width: auto;
+}
+
+div.header_content {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.right-content {
+    margin-left: 30px;
+}
+
+img.header-image-body {
+    width: 300px;
+}
+
+div.header-list {
+    background-color: rgba(0, 0, 0, 0.787);
+}
+
+ul.nav {
+    margin-left: 15px
+}
+
+a.nav-link {
+    color: white;
+}
+
+div.container {
+    margin-top: 50px;
+}

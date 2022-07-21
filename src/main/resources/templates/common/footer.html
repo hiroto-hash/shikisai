@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.springframework.org/schema/security">
 
-<head>
-  <!-- common head -->
-  <th:block th:fragment="head">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  </th:block>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
+    <title>色彩</title>
+  </head>
 
 <body>
-  <footer xmlns:th="http://www.thymeleaf.org" th:fragment="footer_fragment" id="footer">
-    サンプルアプリケーションのフッターです。
+  <footer xmlns:th="http://www.thymeleaf.org" th:fragment="footer_fragment" id="footer" class="container">
+      <p>&copy; Company 2017-2018</p>
   </footer>
 </body>
 
