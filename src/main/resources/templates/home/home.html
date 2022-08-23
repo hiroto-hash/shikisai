@@ -14,36 +14,19 @@
   <div th:replace="common/header :: header_fragment"></div>
   <div th:replace="common/list :: header_list_fragment"></div>
   <div class="container">
-    <!-- Example row of columns -->
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-          condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-          Donec sed odio dui. </p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-4">
-        <h2>Heading</h2>
-        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta
-          felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-          massa justo sit amet risus.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+    <div class="container_main">
+      <div class="container_body">
+        <div class="question_text p-3">
+          <h1 class="mt-5">Sticky footer with fixed navbar</h1>
+          <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and
+            CSS.
+            A
+            fixed navbar has been added with <code class="small">padding-top: 60px;</code> on the <code
+              class="small">main &gt; .container</code>.</p>
+          <p>Back to <a href="/docs/5.0/examples/sticky-footer/">the default sticky footer</a> minus the navbar.</p>
+        </div>
       </div>
     </div>
-
-    <hr>
-
-  </div>
-  <div th:replace="common/footer :: footer_fragment"></div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <div th:replace="common/sub :: sub_fragment"></div>
+    <div th:replace="common/footer :: footer_fragment"></div>
 </body>
